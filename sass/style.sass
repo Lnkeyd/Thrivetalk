@@ -1,0 +1,458 @@
+@import mixines
+@import variables
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+header
+    padding-top: 27px
+    display: flex
+
+.menu
+    display: flex
+    width: 100%
+    // margin-top: -27px
+    // padding-top: 27px
+    // height: 90px
+    // position: fixed
+    // background: rgba(255,255,255, .5)
+    z-index: 6
+
+.bgcolor
+    position: absolute
+    top: 0px
+    background-color: #f4f9e2
+    width: 100%
+    height: 100%
+    z-index: -3
+
+.bgtablet
+    position: absolute
+    width: 704px
+    height: 802px
+    top: 0
+    right: 0
+    background-image: url(../img/Tablet.png)
+    z-index: -2
+
+.bgimage
+    position: absolute
+    width: 743px
+    height: 824px
+    top: 0
+    right: 0px
+    background-image: url(../img/Header.png)
+    background-repeat: no-repeat
+    z-index: -1
+
+.logo
+    padding-left: 179px
+    font-family: $main-font
+    font-size: 24px
+    color: $main-color
+    font-weight: 400
+    font-size: 24px
+    a
+        text-decoration: none
+        color: $main-color
+
+.menu_list
+    margin: 0 auto
+    display: flex
+    list-style: none
+    width: 233px
+    justify-content: space-between
+    font-family: $main-font
+    font-weight: 400
+    font-size: 14px
+    a
+        text-decoration: none
+        color: $second-color
+
+.textbutton
+    margin-right: 131px
+    width: 150px
+    height: 50px
+    background: $main-color
+    border-radius: 50px
+    display: flex
+    justify-content: center
+    align-items: center
+    font-family: $main-font
+    font-weight: 400
+    font-size: 14px
+    text-transform: uppercase
+    a
+        text-decoration: none
+        color: #fff
+
+.whoami
+    margin-top: 156px
+    margin-left: 179px
+    width: 484px
+    &_overheader
+        font-family: Larsseit
+        font-size: 24px
+        font-family: $main-font
+        font-weight: 400
+        font-size: 24px
+        a
+            text-decoration: none
+            color: $main-color
+
+    &_header
+        font-family: $main-font
+        font-weight: 800 
+        font-size: 48px
+        margin-top: 27px
+        text-transform: uppercase
+        color: $second-color
+    &_subheader
+        margin-top: 72px
+        font-family: $main-font
+        font-size: 24px
+        font-weight: 400
+        line-height: 42px
+        color: $second-color
+    &_flexbutton
+        width: 338px
+        display: flex
+        margin-top: 58px
+        justify-content: space-between
+        &_button
+            width: 150px
+            height: 50px
+            background: #F9B640
+            display: flex
+            justify-content: center
+            align-items: center
+            font-family: $main-font
+            font-size: 16px
+            font-weight: 400
+            text-transform: uppercase
+            letter-spacing: 0.1em
+            a
+                text-decoration: none
+                color: #fff
+        &_subbutton
+            width: 150px
+            height: 50px
+            display: flex
+            justify-content: center
+            align-items: center
+            font-family: $main-font
+            font-size: 16px
+            font-weight: 400
+            text-transform: uppercase
+            letter-spacing: 0.1em
+            a
+                text-decoration: none
+                color: #FAB63E
+.why
+    margin-top: 92px
+    position: relative
+    &_bgcolor
+        position: absolute
+        top: 0
+        height: 604px
+        width: 100%
+        background-color: #62D0DF
+        z-index: -1
+    &_bgimage
+        position: absolute
+        width: 525px
+        height: 604px
+        background-image: url(../img/Girl.png)
+        right: 0
+        top: 0
+    &_container
+        padding-top: 153px
+        padding-left: 178px
+        width: 650px
+        &_header
+            font-family: $main-font
+            font-size: 36px
+            font-weight: 400
+            color: #fff
+        &_descr
+            font-family: $main-font
+            margin-top: 75px
+            font-size: 20px
+            color: #fff
+            font-weight: 300
+            .bold
+                display: inline
+                font-size: 24px
+                font-weight: 400
+
+.about
+    height: 478px
+    width: 100%
+    margin-top: 161px
+    position: relative
+    &_wrap
+        display: flex   
+        &_aside
+            position: absolute
+            left: 106px
+            top: 156px
+            @include label()
+        &_maintext
+            display: block
+            width: 592px
+            margin: 0 auto
+            margin-top: 150px
+            font-family: $main-font
+            font-size: 24px
+            line-height: 34px
+            font-weight: 400
+            color: $second-color
+    &_descr
+        display: block
+        width: 201px
+        margin: 0 auto
+        margin-top: 76px
+        font-family: $main-font
+        font-size: 16px
+        font-weight: 400
+        a
+            text-decoration: none
+            color: rgba(34, 53, 111, 0.5)
+
+.fewcards
+    display: flex
+    &_1
+        background: #FFE2DE
+    &_2
+        background: #C4E769
+    &_3
+        background: #62D0DF
+    &_4
+        background: #0052C1
+    @include card()
+
+.bigcards
+    margin-top: 120px
+    display: flex
+    flex-wrap: wrap
+    @include bigcard()
+    &_1
+        background: $second-color
+    &_2
+        background: #0052C1
+    &_3
+        background: url(../img/Strawberry.jpg)
+    &_4
+        background: #62D0DF
+    &_5
+        background: #DEE1FF
+    &_6
+        background: #8F00FF
+
+.mincards
+    margin-top: 22px
+    display: flex
+    flex-wrap: wrap
+    @include mincard()
+
+.stats
+    @include photosection()
+    background-color: #ffffff
+    &_bgimage
+        background: url(../img/Man.jpg)
+    &_wrap
+        margin-left: 106px
+        width: 676px
+        &_label
+            @include label()
+            color: $second-color
+        &_info
+            margin-top: 225px
+            font-family: $main-font
+            font-size: 36px
+            line-height: 53px
+            color: $second-color
+            &_marker
+                display: inline
+                color: $main-color
+        &_descr
+            margin-top: 152px
+            a
+                text-decoration: none
+                color: #FAB63E
+
+
+.smile
+    @include photosection()
+    background-color: $second-color
+    &_wrap
+        margin-left: 180px
+        width: 580px
+        z-index: 2
+        &_label
+            @include label()
+            color: #fff
+        &_header
+            margin-top: 230px
+            font-family: $main-font
+            font-size: 64px
+            font-weight: 800
+            color: #fff
+        &_subheader
+            margin-top: 75px
+            font-family: $main-font
+            font-size: 36px
+            line-height: 53px
+            font-weight: 400
+            color: #fff
+        &_descr
+            margin-top: 75px
+            a
+                text-decoration: none
+                color: $main-color
+    &_bgimage
+        position: absolute
+        right: 0
+        background: url(../img/OtherMan.jpg)
+
+.contacts
+    background-color: #fff
+    height: 380px
+    width: 100%
+    position: relative
+    display: flex
+    &_bgimage
+        width: 570px
+        height: 380px
+        background: url(../img/Girl2.jpg)
+    &_wrap
+        margin-top: 98px
+        margin-left: 68px
+        display: flex
+        justify-content: space-between
+        &_info
+            width: 207px
+            &_header
+                @include contactheader()
+            &_descr
+                @include contactdescr()
+        &_health
+            width: 240px
+            &_header
+                @include contactheader()
+            &_address
+                @include contactdescr()
+            &_number
+                @include contactdescr()
+                margin-top: 20px
+            &_email
+                @include contactdescr()
+                margin-top: 0px
+            a
+                text-decoration: none
+                color: $main-color  
+        &_hours
+            width: 240px
+            &_header
+                @include contactheader()
+            &_descr
+                @include contactdescr()
+footer
+    height: 80px
+    width: 100%
+    background: $main-color
+    .rights
+        padding-top: 34px
+        margin-left: 179px
+        font-family: $main-font
+        font-size: 14px
+        width: 400px
+        color: #fff
+
+@media (max-width: 1170px)
+    .bgtablet
+        right: 0px
+        width: 660px
+    .bgimage
+        right: 0px
+        width: 660px
+    .whoami
+        &_header
+            width: 350px
+        &_subheader
+            width: 350px
+    .why
+        &_bgimage
+            right: 0px
+            width: 400px
+        &_container
+            padding-left: 140px
+            width: 574px
+            &_descr
+                line-height: 30px
+                margin-top: 60px
+    .about
+        &_wrap
+            margin-top: -90px
+    .fewcards
+        justify-content: stretch
+        .card
+            height: 302px
+            .line
+                width: 203px
+            .text
+                width: 160px
+                font-size: 28px
+    .bigcards
+        .card
+            height: 405px
+            .line
+                width: 274px
+            .circle
+                left: 60px
+            .text
+                margin-left: 92px
+                width: 190px
+    .mincards
+        width: 100%
+        .card
+            .textcontainer
+                height: 203px
+                width: 238px
+                margin-left: 86px
+                .mincard_descr
+                    line-height: 1.3
+    .stats
+        &_bgimage
+            width: 465px
+            margin-left: -100px
+        &_wrap
+            width: 472px
+            margin-left: 50px
+            &_info
+                margin-top: 144px
+                font-size: 32px
+    .smile
+        &_wrap
+            margin-left: 128px
+            &_header
+                margin-top: 114px
+                font-size: 56px
+            &_subheader
+                font-size: 34px
+                width: 400px
+        &_bgimage
+            width: 400px
+    .contacts
+        &_bgimage
+            margin-left: -200px
+// @media (min-width: 992px)
+
+// @media (min-width: 768px)
+
+// @media (min-width: 576px)
+
+// @media (max-width: 376px)
+    

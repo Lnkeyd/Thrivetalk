@@ -1,0 +1,117 @@
+@mixin card()
+    .card
+        display: block
+        width: 25%
+        height: 360px
+        position: relative
+        z-index: -1
+    .line
+        display: block
+        height: 2px
+        width: 255px
+        margin: 0 auto
+        margin-top: 72px
+        background-color: #fff
+    .circle
+        position: absolute
+        top: 107px
+        left: 54px
+        width: 9px
+        height: 9px
+        border-radius: 100%
+        background: #E9B730
+    .text
+        margin-top: 24px
+        margin-left: 78px
+        width: 232px
+        font-family: $main-font
+        font-size: 32px
+        color: #FFF
+
+@mixin bigcard()
+    @include card()
+    .card
+        width: 33.33%
+        height: 480px
+    .line
+        width: 340px
+        margin-top: 96px
+    .circle
+        top: 143px
+        left: 72px
+        width: 12px
+        height: 12px
+    .text
+        margin-top: 30px
+        margin-left: 104px
+        width: 206px
+
+@mixin mincard()
+    .card
+        width: 33.33%
+        height: 240px
+    .textcontainer
+        height: 148px
+        width: 298px
+        margin-top: 55px
+        margin-left: 105px
+    .mincard_header
+        font-family: $main-font
+        font-size: 28px
+        font-weight: 400
+        color: $second-color
+    .mincard_descr
+        margin-top: 28px
+        font-family: $main-font
+        font-size: 16px
+        font-weight: 300
+        color: rgba(34, 53, 111, 0.5)
+
+
+@mixin label()
+    font-family: $main-font
+    font-size: 16px;
+    font-weight: 300
+    color: $second-color
+    text-transform: uppercase
+
+@mixin contactheader()
+    font-family: $main-font
+    font-size: 14px
+    font-weight: 800
+    color: $second-color
+
+@mixin contactdescr()
+    margin-top: 70px
+    font-family: $main-font
+    font-size: 14px
+    line-height: 23px
+    font-weight: 300
+    color: rgba(34, 53, 111, 0.5)
+
+@mixin photosection()
+    height: 800px
+    width: 100%
+    position: relative
+    display: flex
+    &_bgimage
+        width: 480px
+        height: 800px
+    &_wrap
+        &_label
+            @include label()
+            margin-top: 103px
+        &_info
+            margin-top: 225px
+            font-family: $main-font
+            font-size: 36px
+            line-height: 53px
+            color: $second-color
+            &_marker
+                display: inline
+                color: $main-color
+        &_descr
+            font-family: $main-font
+            font-size: 16px
+            font-weight: 800
+            letter-spacing: 0.1em
