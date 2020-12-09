@@ -1,6 +1,6 @@
 @import mixines
 @import variables
-@import media
+
 *
     margin: 0
     padding: 0
@@ -370,3 +370,253 @@ footer
         font-size: 14px
         width: 400px
         color: #fff
+
+@media (max-width: 1170px)
+    .bgtablet
+        right: 0px
+        width: 660px
+    .bgimage
+        right: 0px
+        width: 660px
+    .whoami
+        &_header
+            width: 350px
+        &_subheader
+            width: 350px
+    .why
+        &_bgimage
+            right: 0px
+            width: 400px
+        &_container
+            padding-left: 140px
+            width: 574px
+            &_descr
+                line-height: 30px
+                margin-top: 60px
+    .about
+        &_wrap
+            margin-top: -90px
+    .fewcards
+        justify-content: stretch
+        .card
+            height: 302px
+            .line
+                width: 203px
+            .text
+                width: 160px
+                font-size: 28px
+    .bigcards
+        .card
+            height: 405px
+            .line
+                width: 274px
+            .circle
+                left: 60px
+            .text
+                margin-left: 92px
+                width: 190px
+    .mincards
+        width: 100%
+        .card
+            .textcontainer
+                height: 203px
+                width: 238px
+                margin-left: 86px
+                .mincard_descr
+                    line-height: 1.3
+    .stats
+        &_bgimage
+            width: 465px
+            margin-left: -100px
+        &_wrap
+            width: 472px
+            margin-left: 50px
+            &_info
+                margin-top: 144px
+                font-size: 32px
+    .smile
+        &_wrap
+            margin-left: 128px
+            &_header
+                margin-top: 114px
+                font-size: 56px
+            &_subheader
+                font-size: 34px
+                width: 400px
+        &_bgimage
+            width: 400px
+    .contacts
+        &_bgimage
+            margin-left: -200px
+
+// 992 px
+@media (max-width: 992px)  
+    .bgtablet
+        right: 0px
+        width: 660px
+    .bgimage
+        right: 0px
+        width: 660px
+        opacity: .5
+    .whoami
+        &_header
+            width: 350px
+        &_subheader
+            width: 400px
+    .menu
+        display: flex
+        justify-content: space-between
+        &_list
+            padding-left: 33px
+            justify-content: space-evenly
+        .logo
+            padding-left: 124px
+        .textbutton
+            width: 140px
+            margin-left: 0px
+            margin-right: 80px
+            a
+                font-size: 12px
+    .why
+        &_bgcolor
+            opacity: .8
+        &_bgimage
+            right: 0px
+            width: 524px
+            opacity: 0.5
+            z-index: -1
+        &_container
+            padding-left: 123px
+            width: 481px
+            margin: 0 auto
+            &_descr
+                font-size: 17px
+                line-height: 30px
+                margin-top: 60px
+                .bold
+                    display: block
+                    margin-bottom: 40px
+
+    .about
+        &_wrap
+            margin-top: -180px
+            &_aside
+                left: 0
+                top: 68px
+                position: relative
+                text-align: center
+            &_maintext
+                width: 528px
+                margin-top: 100px
+        &_descr
+            text-align: center
+    .fewcards
+        justify-content: stretch
+        flex-wrap: wrap
+        flex-grow: 1
+        .card
+            height: 300px
+            width: 50%
+            .line
+                margin-top: 40px
+                width: 276px
+            .circle
+                left: 90px
+                top: 100px
+            .text
+                width: 200px
+                font-size: 28px
+                margin-left: 120px
+                margin-top: 46px
+    .bigcards
+        flex-wrap: wrap
+        .card
+            width: 50%
+            height: 405px
+            .line
+                width: 274px
+            .circle
+                left: 60px
+            .text
+                margin-left: 92px
+                width: 190px
+    .mincards
+        width: 100%
+        flex-wrap: wrap
+        .card
+            width: 50%
+            .textcontainer
+                height: 203px
+                width: 238px
+                margin-left: 86px
+                .mincard_descr
+                    line-height: 1.3
+    .stats
+        &_bgimage
+            width: 375px
+            margin-left: -134px
+            opacity: .7
+        &_wrap
+            width: 420px
+            margin-left: 54px
+            &_info
+                margin-top: 144px
+                font-size: 32px
+    .smile
+        &_wrap
+            width: 300px
+            margin: 0 auto
+            margin-right: 165px
+            &_label
+                margin-left: -200px
+            &_header
+                margin-top: 114px
+                margin-left: -200px
+                font-size: 48px
+                width: 250px
+            &_subheader
+                font-size: 34px
+                width: 400px
+        &_bgimage
+            width: 523px
+            opacity: .6
+    .contacts
+        &_bgimage
+            margin-left: 0
+            opacity: .3
+            z-index: 0
+        &_wrap
+            z-index: 1
+            margin-left: -420px
+            &_health
+                &_header
+                    color: rgb(34, 53, 111)
+                &_address
+                    color: rgb(34, 53, 111)
+                &_number
+                    color: rgb(34, 53, 111)
+                &_email
+                    a
+                        color: #6bb7ff
+            &_hours
+                &_header
+                    color: rgb(34, 53, 111)
+                &_descr
+                    color: rgb(34, 53, 111)
+            &_info
+                &_header
+                    color: rgb(34, 53, 111)
+                &_descr
+                    color: rgb(34, 53, 111)
+    footer
+        .rights
+            text-align: center
+            color: #ffffff9f
+
+
+// @media (max-width: 768px)
+
+// @media (max-width: 576px)
+
+// @media (max-width: 376px)
+    
